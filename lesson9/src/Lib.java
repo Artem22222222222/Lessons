@@ -1,13 +1,39 @@
 public class Lib {
 
     private int libSize = 10;
-    Book[] books;
-    int len;
+    private Books[] books;
+    private static int len;
 
     Lib(){
-        books = new Book[libSize];
+        books = new Books[libSize];
     }
-    public void add(Book book){
+
+    public int getLibSize() {
+        return libSize;
+    }
+
+    public Books[] getBooks() {
+        return books;
+    }
+
+    public int getLen() {
+        return len;
+    }
+
+
+    public void setLibSize(int libSize) {
+        this.libSize = libSize;
+    }
+
+    public void setBooks(Books[] books) {
+        this.books = books;
+    }
+
+    public void setLen(int len) {
+        this.len = len;
+    }
+
+    public void add(Books book){
         if (len < libSize) {
             books[len] = book;
             len++;
@@ -17,7 +43,7 @@ public class Lib {
     }
     public void remove(String bookName){
         for (int i = 0; i < len; i++) {
-            if (bookName==books[i].title){
+            if (bookName.equals(books[i].getTitle())){
                 books[i] = null;
             }
         }
@@ -33,8 +59,8 @@ public class Lib {
 
     }
     private void clear(){
-        Book[] books2;
-        books2 = new Book[libSize];
+        Books[] books2;
+        books2 = new Books[libSize];
         int index = 0;
         for (int i = 0; i < books.length; i++){
             if (books[i] != null){
@@ -43,6 +69,16 @@ public class Lib {
             }
         }
         this.books = books2;
+    }
+    public void search(String bookName) {
+        for (int i = 0; i < len; i++) {
+            if (bookName.equals(books[i].getTitle())) {
+                System.out.println(books[i].getAuthor());
+            }
+        }
+    }
+    public static void numberOfBooks(){
+        System.out.println(len);
     }
 
 }
