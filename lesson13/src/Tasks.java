@@ -4,7 +4,6 @@ import static java.util.Collections.sort;
 
 public class Tasks {
     public static void sort1(ArrayList<Integer> list, boolean sort){
-//        list.sort(list, sort);
         list.sort(
                 (o1, o2) -> {
             int sortDirection = sort ? 1: -1;
