@@ -69,22 +69,13 @@ class UI extends JFrame implements ActionListener {
                     moveButton(buttons.getLast()));
             thread.start();
             for (int i = 0; i < buttons.size(); i++) {
-                for (int x2 = -25; x2 < 25; x2++) {
-                    for (int y2 = -25; y2 < 25; y2++) {
-                        for (int x = -25; x < 25; x++) {
-                            if (buttons.get(i).getX() + x == b.getX() + x2) {
-                                for (int y = -25; y < 25; y++) {
-                                    if (buttons.get(i).getY() + y == b.getY() + y2) {
-                                        notGameEnd = false;
-                                        buttons.stream().forEach(CostomButton::gameOver);
-                                        win(false);
-                                    }
-                                }
-                            }
-                        }
+                if (Math.sqrt(Math.pow(b.getX() - buttons.get(i).getX(), 2) + Math.pow(b.getY() - buttons.get(i).getY(), 2)) <= 50){
+                    notGameEnd = false;
+                    buttons.stream().forEach(CostomButton::gameOver);
+                    win(false);
                     }
-                }
             }
+
 
             try {
                 Thread.sleep(time);
