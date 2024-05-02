@@ -20,15 +20,14 @@ public class Model implements IModel{
                 c.getUi().setHeroX(-10);
                 break;
             case 'd':
-                System.out.println("move success");
+                c.getUi().getHero().setGoRight(true);
                 c.getUi().setHeroX(10);
 
                 if (!c.getUi().getHero().isGoRightEver()){
+                    c.getUi().getHero().setGoRightEver(true);
                     right = new Thread(this.c.getUi().getHero()::moveRight);
                     right.start();
-                    c.getUi().getHero().setGoRightEver(true);
                 }
-                c.getUi().getHero().setGoRight(true);
                 break;
             case 's':
                 c.getUi().setHeroY(10);

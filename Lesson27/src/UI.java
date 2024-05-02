@@ -31,11 +31,9 @@ public class UI implements IUI{
     }
     public void setHeroX(int a){
         hero.setBounds(hero.getX()+a, hero.getY(), heroWidth, heroHeight);
-        System.out.println("draw success");
     }
     public void setHeroY(int a){
         hero.setBounds(hero.getX(), hero.getY()+a, heroWidth, heroHeight);
-        System.out.println("draw success");
     }
 
     public JFrame getMainFrame() {

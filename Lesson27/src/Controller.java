@@ -16,13 +16,11 @@ public class Controller implements IController, KeyListener, KeyManager {
     @Override
     public void keyPressed(KeyEvent e) {
         model.keyTyped(e);
-        System.out.println("move");
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
         ui.getHero().setGoRight(false);
-        System.out.println("Stop move");
     }
 
     public UI getUi() {
