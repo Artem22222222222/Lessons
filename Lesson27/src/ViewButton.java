@@ -24,6 +24,12 @@ public class ViewButton extends JButton {
     }
 
     @Override
+    public void setBounds(int x, int y, int width, int height) {
+        super.setBounds(x, y, width, height);
+        repaint();
+    }
+
+    @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(cat, x, y, ui.getHero());
