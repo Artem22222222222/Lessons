@@ -1,25 +1,27 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 
 import java.awt.*;
+import java.io.File;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class UI implements IUI{
     private JFrame mainFrame;
     private ViewButton hero;
+    public Label Background;
     private Controller controller;
-    private JPanel players;
+    private Background players;
     private int heroWidth = 273;
     private int heroHeight = 288;
     public UI(Controller controller) {
         this.controller = controller;
         mainFrame = new JFrame();
-        mainFrame.setBounds(0,0,1000, 500);
-//        mainFrame.getContentPane().setBackground(Color.BLACK);
+        mainFrame.setBounds(0,0,1000, 702);
         mainFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 
-        players = new JPanel();
+        players = new Background();
         hero = new ViewButton(this);
         hero.setBounds(100, 50, heroWidth, heroHeight);
 
@@ -30,12 +32,6 @@ public class UI implements IUI{
         players.setVisible(true);
 //        mainFrame.repaint();
         mainFrame.setVisible(true);
-    }
-    public void setHeroX(int a){
-        hero.setBounds(hero.getX()+a, hero.getY(), heroWidth, heroHeight);
-    }
-    public void setHeroY(int a){
-        hero.setBounds(hero.getX(), hero.getY()+a, heroWidth, heroHeight);
     }
 
     public JFrame getMainFrame() {
@@ -60,5 +56,13 @@ public class UI implements IUI{
 
     public void setC(Controller c) {
         this.controller = c;
+    }
+
+    public Background getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(Background players) {
+        this.players = players;
     }
 }

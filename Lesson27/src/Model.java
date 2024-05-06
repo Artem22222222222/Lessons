@@ -14,23 +14,27 @@ public class Model implements IModel{
     public void keyTyped(KeyEvent e){
         switch (e.getKeyChar()){
             case 'w':
-                c.getUi().setHeroY(-10);
                 break;
             case 'a':
-                c.getUi().setHeroX(-10);
                 break;
             case 'd':
                 c.getUi().getHero().setGoRight(true);
-                c.getUi().setHeroX(10);
+
+                c.getUi().getPlayers().setGoRight(true);
 
                 if (!c.getUi().getHero().isGoRightEver()){
                     c.getUi().getHero().setGoRightEver(true);
                     right = new Thread(this.c.getUi().getHero()::moveRight);
                     right.start();
                 }
+
+                if (!c.getUi().getPlayers().isGoRightEver()) {
+                    c.getUi().getPlayers().setGoRightEver(true);
+                    right = new Thread(this.c.getUi().getPlayers()::moveRight);
+                    right.start();
+                }
                 break;
             case 's':
-                c.getUi().setHeroY(10);
                 break;
         }
     }

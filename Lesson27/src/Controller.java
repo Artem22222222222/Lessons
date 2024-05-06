@@ -21,6 +21,7 @@ public class Controller implements IController, KeyListener, KeyManager {
     @Override
     public void keyReleased(KeyEvent e) {
         ui.getHero().setGoRight(false);
+        ui.getPlayers().setGoRight(false);
     }
 
     public UI getUi() {
