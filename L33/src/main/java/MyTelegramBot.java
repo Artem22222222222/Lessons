@@ -5,6 +5,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MyTelegramBot extends TelegramLongPollingBot {
     ArrayList<User1> users = new ArrayList<>();
@@ -16,12 +17,12 @@ public class MyTelegramBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "Cijgeksogcgbot"; // замініть на ім'я вашого бота
+        return "Cijgeksogcgbot";
     }
 
     @Override
     public String getBotToken() {
-        return "7290756550:AAFocdm5ZFO8dUegvWonh0zOwMgX3rVBDzg"; // замініть на токен вашого бота
+        return "7290756550:AAFocdm5ZFO8dUegvWonh0zOwMgX3rVBDzg";
     }
 
     @Override
@@ -32,7 +33,7 @@ public class MyTelegramBot extends TelegramLongPollingBot {
 
 
 
-            beforStart(chatId);
+            beforeStart(chatId);
 
             switcher(chatId, messageText);
 
@@ -43,14 +44,21 @@ public class MyTelegramBot extends TelegramLongPollingBot {
 
     private void game(String messageText, User1 user1) {
 
-            course = Integer.parseInt(messageText);
-            gameField.set(course, user1.getCross());
-            sendField();
+        course = Integer.parseInt(messageText);
+        if (Objects.equals(gameField.get(course - 1), "_")) {
+            gameField.set(course - 1, user1.getCross());
+        }
+        for (User1 user : users) {
+            if (user != user1) {
+                sendField(user);
+            }
+        }
+
 
     }
 
-    private void sendField() {
-        sendMasege("ти ходиш", nextUser);
+    private void sendField(User1 user1) {
+        sendMessage("ти ходиш", user1.getId());
         for (int i = 0; i < users.size(); i++) {
             message = new SendMessage();
             message.setChatId(String.valueOf(users.get(i).getId()));
@@ -62,10 +70,10 @@ public class MyTelegramBot extends TelegramLongPollingBot {
             }
         }
     }
-    private void sendMasege(String mesege,  long id) {
+    private void sendMessage(String messageTextSend, long id) {
             message = new SendMessage();
             message.setChatId(String.valueOf(id));
-            message.setText(mesege);
+            message.setText(messageTextSend);
             try {
                 execute(message);
             } catch (TelegramApiException e) {
@@ -87,17 +95,17 @@ public class MyTelegramBot extends TelegramLongPollingBot {
         }
     }
 
-    private void beforStart(long chatId) {
+    private void beforeStart(long chatId) {
         if (!gameStart) {
 
 
                     if (users.isEmpty()) {
                         users.add(new User1(chatId, "x"));
                         nextUser = chatId;
-                        System.out.print("add first");
+                        System.out.println("add first");
                     }else {
                         users.add(new User1(chatId, "o"));
-                        System.out.print("add 2");
+                        System.out.println("add 2");
                     }
 
 
@@ -106,7 +114,10 @@ public class MyTelegramBot extends TelegramLongPollingBot {
             for (int i = 0; i < 9; i++) {
                 gameField.add("_");
             }
-
+            for (User1 user : users) {
+                sendMessage("Game start", user.getId());
+            }
+            sendMessage("ти ходиш", nextUser);
             gameStart = true;
         }
     }
