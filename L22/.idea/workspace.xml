@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="db9e1b0a-2264-42f4-91cd-6e270e94474c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../L17/L17.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L20/L20.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../L20/src/Ui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JSONExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson19/Lesson19.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson19/src/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson20/Lesson20.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson21/Lesson21.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sl4/Sl4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l10/l10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/l13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/src/Contaks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l14/l14.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l15/l15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l16/l16.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l8.1/l8.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l8/l8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/l9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/src/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson10/lesson10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/lesson12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson13/lesson13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson16/lesson16.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson16/src/EnumColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson9/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson9_2/lesson9_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson9/src/Book.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2es2Lacbi5tTy645QQLzFEbEgdA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db9e1b0a-2264-42f4-91cd-6e270e94474c" name="Changes" comment="" />
+      <created>1712678911419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712678911419</updated>
+    </task>
+    <servers />
+  </component>
+</project>

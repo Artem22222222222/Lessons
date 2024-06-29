@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34ffb09d-8993-411e-980b-adab81b12ee6" name="Changes" comment="completed!">
+      <change afterPath="$PROJECT_DIR$/../Sl4/Sl4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l10/l10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/l13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l13/src/Contaks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l15/src/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l8.1/l8.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l8/l8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/l9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../l9/src/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson10/lesson10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/src/Clothe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/src/Electronic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/src/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/src/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson12/src/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson9/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lesson9_2/lesson9_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson6/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson8/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson8/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson8/src/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson8/src/Tasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson9/src/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson9/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson9/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2cuL3giOXTtlzRnydV1RHO3bhvS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34ffb09d-8993-411e-980b-adab81b12ee6" name="Changes" comment="" />
+      <created>1708956321382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708956321382</updated>
+    </task>
+    <task id="LOCAL-00001" summary="completed!">
+      <option name="closed" value="true" />
+      <created>1709050785052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709050785052</updated>
+    </task>
+    <task id="LOCAL-00002" summary="completed!">
+      <option name="closed" value="true" />
+      <created>1709378833414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709378833414</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed!" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed!" />
+  </component>
+</project>
