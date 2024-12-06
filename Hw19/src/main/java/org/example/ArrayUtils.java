@@ -2,6 +2,8 @@ package org.example;
 
 public class ArrayUtils {
     static boolean isEven;
+    @Author(name = "Artem")
+    @MethodInfo(name = "mergeSort", type = "int[]", description = "method for sorting")
     public static int[] mergeSort(int[] array) throws ElementNotFoundException {
         isEven = array.length%2 == 0;
         return spliter(split(array, 1), split(array, 2));
@@ -26,11 +28,6 @@ public class ArrayUtils {
                 result[i] = array[i];
             }
         } else if (part == 2){
-//            if (isEven) {
-//                result = new int[array.length / 2];
-//            }else {
-//                result = new int[array.length / 2 + 1];
-//            }
             result = new int[array.length%2 == 0 ? array.length / 2 : array.length / 2 + 1];
             for (int i = array.length/2; i < array.length; i++) {
                 result[j] = array[i];
@@ -73,6 +70,8 @@ public class ArrayUtils {
             }
         }
     }
+    @Author(name = "Artem")
+    @MethodInfo(name = "binarySearch", type = "int", description = "method for searching")
     public static int binarySearch(int[] array, int target) throws ElementNotFoundException {
         int currentIndex = array.length/2;
         while (true){
