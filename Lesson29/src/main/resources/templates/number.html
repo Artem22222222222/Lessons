@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body>
+<h1>Guess the number from 1 to 100</h1>
+<div>
+    <p th:text="${answer}">Default Message</p>
+</div>
+
+<a href="/">back</a>
+
+<form action="/number" method="POST">
+    <input type="text" name="number">
+    <button type="submit">ok</button>
+</form>
+</body>
