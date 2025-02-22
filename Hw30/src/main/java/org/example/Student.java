@@ -24,7 +24,7 @@ public class Student {
     @EqualsAndHashCode.Exclude
     private String email;
     @EqualsAndHashCode.Exclude
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private Set<Homework> homeworks;
 
 
