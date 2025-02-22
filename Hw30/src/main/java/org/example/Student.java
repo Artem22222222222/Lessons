@@ -1,12 +1,10 @@
 package org.example;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Cascade;
 
-import java.lang.reflect.Type;
+
 import java.util.HashSet;
 import java.util.Set;
 

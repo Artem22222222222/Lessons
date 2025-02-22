@@ -22,7 +22,6 @@ public class Homework {
     private int mark;
     @EqualsAndHashCode.Exclude
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-//    @JoinColumn(name = "student_id", nullable = false)
     private Student student;
 
     public Homework(Long id, String description, LocalDate deadline, int mark, Student student) {

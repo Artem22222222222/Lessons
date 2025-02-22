@@ -1,12 +1,10 @@
 package org.example;
 
 import jakarta.persistence.*;
-import lombok.RequiredArgsConstructor;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 
 public class StudentDao implements GenericDao<Student, Long>{
