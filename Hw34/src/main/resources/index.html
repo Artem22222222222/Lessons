@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Super calculator</title>
+
+    <style>
+        #baseOutput {
+
+        }
+    </style>
+
+</head>
+
+<body>
+<h1 id="test"></h1>
+<form >
+    <label for="baseOutput">Result:</label>
+    <output id="baseOutput" type="text"/>
+    <button id="1" name="1" type="button">1</button>
+</form>
+
+<script>
+    const but1 = document.getElementById("1")
+    const output = document.getElementById("baseOutput")
+    window.but1 = but1
+    but1.onclick = () => {
+        const butName = but1.name
+        output.innerHTML = butName
+    }
+</script>
+</body>
+
+
+</html>
