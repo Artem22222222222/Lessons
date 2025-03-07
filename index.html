@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Super calculator</title>
+
+    <style>
+        #output{
+            display: flex;
+            font-size: 200%;
+        }
+        #baseButtons{
+            width: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            width: max-content;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1 id="test"></h1>
+
+<form id="output">
+    <label id="baseOutputLabel" for="baseOutput">Result:</label>
+    <output id="baseOutput" type="text">0</output>
+</form>
+
+<ul id="baseButtons">
+    <button id="clearButton" name="clearButton">clear</button>
+    <button id="+" name="+">+</button>
+    <button id="-" name="-">-</button>
+    <button id="*" name="*">*</button>
+    <button id="/" name="/">/</button>
+    <button id="=" name="=">=</button>
+</ul>
+
+<script>
+    let num
+    let globalOperation = null
+    let log = ""
+    const output = document.getElementById("baseOutput")
+    const baseButtons = document.getElementById("baseButtons")
+    for (i = 1; i < 11; i++) {
+        if (i == 10){
+            i = 0
+        }
+        const but = document.createElement("button")
+        but.id = i
+        but.name = i.toString();
+        but.innerText = i.toString();
+        but.onclick = () => {
+            const butName = but.name
+            if (output.value == 0) {
+                output.textContent = butName
+            } else {
+                output.textContent = output.value + butName
+            }
+            
+        }
+        baseButtons.appendChild(but)
+        if (i == 0){
+            break
+        }
+    }
+
+
+    document.addEventListener("click", (event) => {
+        switch (event.target.textContent){
+            case "+":
+            case "-":
+            case "*":
+            case "/":
+                if (num == null){
+                    num = parseInt(output.textContent)
+                    log = num
+                } else {
+                    calculate(globalOperation)
+                }
+                globalOperation = event.target.textContent
+                output.textContent = "0"
+                break
+            case "clear":
+                output.textContent = "0"
+                num = null
+                break
+            case "=":
+                if (num == null){
+                    output.textContent = "0"
+                } else {
+                    calculate(globalOperation)
+                    output.textContent = num
+                    console.log(log + "=" + num)
+                    num = null
+                }
+                break
+        }  
+    }) 
+    
+    
+    function calculate(operation){
+        log = log + globalOperation + output.textContent
+        switch (operation){
+            case "+":
+                num = num + parseInt(output.textContent)
+                break
+            case "-":
+                num = num - parseInt(output.textContent)
+                break
+            case "*":
+                num = num * parseInt(output.textContent)
+                break
+            case "/":
+                if (parseInt(output.textContent) == 0){
+                    console.error("Division by zero is not allowed");
+                    num = 0
+                } else {
+                    num = num / parseInt(output.textContent)
+                }
+                break
+            }
+        }
+
+
+    
+    document.addEventListener("keydown", (event) => {
+        if (event.key == "Backspace" && output.value != 0)
+            output.textContent = output.textContent.slice(0, -1)
+    })
+    
+</script>
+</body>
+
+
+</html>
